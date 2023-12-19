@@ -255,7 +255,7 @@ void RunGameBot1(_POINT _A[][BOARD_SIZE], _PLAYER& _PLAYER1, _PLAYER& _PLAYER2, 
 			{
 				_POINT temp = timkiemnuocdi(_A, _TURN);
 				PrintText("X", 252, temp.x, temp.y);
-				_A[GetRowIndex(temp.x)][GetColIndex(temp.y)].c = P_X;
+				_A[GetRowIndex(temp.y)][GetColIndex(temp.x)].c = P_X;
 			}
 			switch (ProcessFinish(_A, _PLAYER1, _PLAYER2, _TURN, TestBoard(_A, _TURN, GetRowIndex(_Y), GetColIndex(_X))))
 			{
