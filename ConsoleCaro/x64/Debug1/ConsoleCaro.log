@@ -1,5 +1,0 @@
-﻿  View.cpp
-D:\bao\ConsoleCaro\ConsoleCaro\View.cpp(165,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\bao\ConsoleCaro\ConsoleCaro\View.cpp(167,20): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-D:\bao\ConsoleCaro\ConsoleCaro\View.cpp(456): warning C4715: 'AskContinue': not all control paths return a value
-  ConsoleCaro.vcxproj -> D:\bao\ConsoleCaro\x64\Debug\ConsoleCaro.exe
