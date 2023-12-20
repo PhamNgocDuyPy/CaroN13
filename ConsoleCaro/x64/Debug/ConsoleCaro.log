@@ -1,3 +1,0 @@
-﻿  Control.cpp
-C:\Users\Admin\Documents\CaroN13-main\CaroN13-main\ConsoleCaro\Control.cpp(124): warning C4715: 'RunYesNoMenu': not all control paths return a value
-  ConsoleCaro.vcxproj -> C:\Users\Admin\Documents\CaroN13-main\CaroN13-main\x64\Debug\ConsoleCaro.exe
