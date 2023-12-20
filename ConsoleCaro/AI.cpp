@@ -483,7 +483,7 @@ _POINT timkiemnuocdi(_POINT _A[][BOARD_SIZE], bool _TURN) {
 					diemMax = temp;
 					wayresult.x = _A[i][j].x;
 					wayresult.y = _A[i][j].y;
-					wayresult.c = (_TURN) ? -1 : 1;
+					//wayresult.c = (_TURN) ? -1 : 1;
 				}
 			}
 		}
