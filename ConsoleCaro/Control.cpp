@@ -329,40 +329,6 @@ void RunGameBot1(_POINT _A[][BOARD_SIZE], _PLAYER& _PLAYER1, _PLAYER& _PLAYER2, 
 				validEnter = true;
 			}
 		}
-		while (runGame )
-		{
-			if (Flag)
-			{
-				PrintText("X", 252, 52, 26);
-					_A[0][0].c = P_X;
-					Flag = 0;
-			}
-			else
-			{
-				_POINT temp = timkiemnuocdi(_A, _TURN);
-				PrintText("X", 252, temp.x, temp.y);
-				_A[GetRowIndex(temp.y)][GetColIndex(temp.x)].c = P_X;
-				_X = temp.x;
-				_Y = temp.y;
-			}
-			switch (ProcessFinish(_A, _PLAYER1, _PLAYER2, _TURN, TestBoard(_A, _TURN, GetRowIndex(_Y), GetColIndex(_X))))
-			{
-			case P_X:case P_O:case 0:
-				DrawBoard(1, 1, 30, 8, _A[0][BOARD_SIZE - 1].x + 58, Y_CENTER - 7);
-				PrintText("Do you want to continue?", 249, _A[0][BOARD_SIZE - 1].x + 62, Y_CENTER - 4);
-				if (AskContinue(_A[0][BOARD_SIZE - 1].x + 65, Y_CENTER - 2))
-				{
-					StartGame(_A, _PLAYER1, _PLAYER2, _TURN, _COMMAND, _X, _Y);
-					PlaySoundA("NhacGame.wav", NULL, SND_ASYNC | SND_LOOP);
-				}
-				else
-				{
-					runGame = false;
-				}
-				break;
-			}
-			break;
-		}
 		Flag2 = 1;
 	}
 	PlaySoundA("NoSound.wav", NULL, SND_ASYNC);
